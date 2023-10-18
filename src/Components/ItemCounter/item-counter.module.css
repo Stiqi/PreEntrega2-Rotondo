@@ -1,0 +1,36 @@
+.container-counter {
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  margin: 0.3em 0;
+}
+
+.boton {
+  width: 80%;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.counter {
+  background-color: var(--primary-color);
+  width: 80%;
+  padding: 0.3em;
+  margin: 0;
+}
+
+.aniadir {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1em;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+  width: 50%;
+  transition: 500ms;
+}
+
+.aniadir:hover {
+  background-color: var(--accent-color);
+  width: 60%;
+}

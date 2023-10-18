@@ -23,12 +23,20 @@ const items = [
     key: "2",
     label: (
       <Link to={"/category/toys"} className={styles["dropdown-item"]}>
-        Figuras y Juguetes
+        Juguetes
       </Link>
     ),
   },
   {
     key: "3",
+    label: (
+      <Link to={"/category/figures"} className={styles["dropdown-item"]}>
+        Figuras
+      </Link>
+    ),
+  },
+  {
+    key: "4",
     label: (
       <Link to={"/category/lithophanes"} className={styles["dropdown-item"]}>
         Litofánias
@@ -36,7 +44,7 @@ const items = [
     ),
   },
   {
-    key: "4",
+    key: "5",
     label: (
       <Link to={"/category/cutters"} className={styles["dropdown-item"]}>
         Cortantes
@@ -44,7 +52,7 @@ const items = [
     ),
   },
   {
-    key: "5",
+    key: "6",
     label: (
       <Link to={"/category/keychains"} className={styles["dropdown-item"]}>
         Llaveros
@@ -65,11 +73,7 @@ const NavBar = () => {
             draggable="false"
           />
         </NavLink>
-        <NavLink
-          to={"/store"}
-          activeClassName="active-nav"
-          className="nav-item"
-        >
+        <NavLink to={"/store"} className="nav-item">
           <Dropdown
             menu={{
               items,
@@ -82,7 +86,7 @@ const NavBar = () => {
             </svg>
           </Dropdown>
         </NavLink>
-        <NavLink to={"/cart"} activeClassName="active-nav">
+        <NavLink to={"/cart"}>
           <CartWidget />
         </NavLink>
       </div>

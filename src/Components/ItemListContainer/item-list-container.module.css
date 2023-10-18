@@ -11,14 +11,13 @@
   font-size: 2.5em;
   text-decoration: underline;
   background-color: var(--comp-background);
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
   padding: 6px 0;
-  width: 100%;
+  width: 100vw;
 }
 
 .item-list {
   max-width: 80%;
-  margin: 0 20%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;

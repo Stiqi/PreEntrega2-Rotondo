@@ -6,14 +6,15 @@
   --secondary-color: #5f2498;
   --off-white: #bdbdbd;
   --comp-background: #f8f5ef;
-  /* --page-background: rgb(238, 174, 202); */
-  --page-background: #333;
-  /* --page-gradient-background: radial-gradient(
+  --page-background: rgb(179, 98, 179);
+  --primary-ff: "Cabin", sans-serif;
+  /* --page-background: #333; */
+  --page-gradient-background: radial-gradient(
     circle,
-    rgb(240, 218, 146) 40%,
+    rgb(240, 218, 146) 30%,
     rgb(187, 112, 221) 100%
-  ); */
-  --page-gradient-background: var(--page-background);
+  );
+  /* --page-gradient-background: var(--page-background); */
   font-family: "Cabin", sans-serif;
 }
 
@@ -30,11 +31,12 @@ html {
 }
 
 body {
-  margin: 70px 0;
+  margin: 70px 10%;
 }
 
 button {
   cursor: pointer;
+  font-family: var(--primary-ff);
 }
 
 .nav-logo {
@@ -73,7 +75,7 @@ button {
   }
 
   body {
-    margin: 65px 0;
+    margin: 65px 16px;
   }
 }
 
