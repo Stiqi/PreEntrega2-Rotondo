@@ -8,6 +8,11 @@
 .card-img {
   width: 100%;
   border-radius: 6px;
+  transition: transform 500ms;
+}
+
+.card-img:hover {
+  transform: scale(1.015);
 }
 
 .title {
@@ -32,5 +37,5 @@
 .detail:hover,
 .detail:focus {
   background-color: var(--accent-color);
-  padding: 0.3em 1em;
+  padding: 0.3em 1.5em;
 }

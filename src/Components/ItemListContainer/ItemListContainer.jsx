@@ -32,7 +32,15 @@ const itemPromise = new Promise((response, reject) => {
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [filteredCatalog, setFilteredCatalog] = useState([]);
+
   const { categoryId } = useParams();
+  useEffect(() => {
+    itemPromise
+      .then((items) => setItems(items))
+      .catch((error) => {
+        console.error("Error:", error.message);
+      });
+  }, []);
 
   const filterCatalog = (catalog) => {
     categoryId
@@ -41,14 +49,6 @@ const ItemListContainer = () => {
         )
       : setFilteredCatalog(items);
   };
-
-  useEffect(() => {
-    itemPromise
-      .then((items) => setItems(items))
-      .catch((error) => {
-        console.error("Error:", error.message);
-      });
-  }, []);
 
   useEffect(() => {
     filterCatalog(items);

@@ -2,7 +2,7 @@ const catalogo = [
   {
     title: "Chimuelo y Lightfury",
     price: 3900,
-    id: 1,
+    id: "1",
     image: "../src/Assets/mockimg/dragon.jpg",
     description: "",
     category: "figures",

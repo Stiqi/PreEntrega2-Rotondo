@@ -65,7 +65,7 @@ const NavBar = () => {
   return (
     <div className={styles.container}>
       <div className={styles["page-nav"]}>
-        <NavLink to={"/home"}>
+        <NavLink to={"/"}>
           <img
             src={Logo}
             alt="Logo de Stiqi 3D"
@@ -73,8 +73,9 @@ const NavBar = () => {
             draggable="false"
           />
         </NavLink>
-        <NavLink to={"/store"} className="nav-item">
+        <NavLink to="/">
           <Dropdown
+            className="nav-item"
             menu={{
               items,
               selectable: true,
