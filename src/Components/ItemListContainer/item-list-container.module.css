@@ -13,7 +13,8 @@
   background-color: var(--comp-background);
   margin-bottom: 8px;
   padding: 6px 0;
-  width: 100vw;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .item-list {

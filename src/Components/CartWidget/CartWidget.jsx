@@ -1,8 +1,12 @@
 import { Badge } from "antd";
+import { useContext } from "react";
+import { CartContext } from "../../Context/cartContext";
 
 const CartWidget = () => {
+  const { cantidad } = useContext(CartContext);
+
   return (
-    <Badge color="#fd9b44" count="3" offset={[-5, 12]}>
+    <Badge color="#fd9b44" count={cantidad} offset={[-5, 12]}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
