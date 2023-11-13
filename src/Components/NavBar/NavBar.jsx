@@ -22,7 +22,7 @@ const items = [
   {
     key: "2",
     label: (
-      <Link to={"/category/toys"} className={styles["dropdown-item"]}>
+      <Link to={"/category/juguetes"} className={styles["dropdown-item"]}>
         Juguetes
       </Link>
     ),
@@ -30,7 +30,7 @@ const items = [
   {
     key: "3",
     label: (
-      <Link to={"/category/figures"} className={styles["dropdown-item"]}>
+      <Link to={"/category/figuras"} className={styles["dropdown-item"]}>
         Figuras
       </Link>
     ),
@@ -38,7 +38,7 @@ const items = [
   {
     key: "4",
     label: (
-      <Link to={"/category/lithophanes"} className={styles["dropdown-item"]}>
+      <Link to={"/category/litofanias"} className={styles["dropdown-item"]}>
         Litofánias
       </Link>
     ),
@@ -46,7 +46,7 @@ const items = [
   {
     key: "5",
     label: (
-      <Link to={"/category/cutters"} className={styles["dropdown-item"]}>
+      <Link to={"/category/cortantes"} className={styles["dropdown-item"]}>
         Cortantes
       </Link>
     ),
@@ -54,7 +54,7 @@ const items = [
   {
     key: "6",
     label: (
-      <Link to={"/category/keychains"} className={styles["dropdown-item"]}>
+      <Link to={"/category/llaveros"} className={styles["dropdown-item"]}>
         Llaveros
       </Link>
     ),

@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import style from "./item-counter.module.css";
+import { CartContext } from "../../Context/cartContext";
 
 const ItemCounter = ({ price }) => {
   const [counter, setCounter] = useState(1);
+  const { cantidadTotal, setCantidadTotal } = useContext(CartContext);
 
   const handleRestar = () => {
     counter > 1 && setCounter(counter - 1);
+    cantidadTotal > 0 && setCantidadTotal(cantidadTotal - 1);
   };
 
   const handleSumar = () => {
     setCounter(counter + 1);
+    setCantidadTotal(cantidadTotal + 1);
   };
 
   return (

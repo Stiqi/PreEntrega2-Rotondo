@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { CartContext } from "../../Context/cartContext";
 
 const CartWidget = () => {
-  const { cantidad } = useContext(CartContext);
+  const { cantidadTotal } = useContext(CartContext);
 
   return (
-    <Badge color="#fd9b44" count={cantidad} offset={[-5, 12]}>
+    <Badge color="#fd9b44" count={cantidadTotal} offset={[-5, 12]}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
